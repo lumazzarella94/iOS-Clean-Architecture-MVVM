@@ -2,7 +2,8 @@
 
 import Foundation
 
-struct MoviesListItemViewModel: Equatable {
+struct MoviesListItemViewModel: Equatable, TableViewItem {
+    var id: String = UUID().uuidString
     let title: String
     let overview: String
     let releaseDate: String
